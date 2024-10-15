@@ -7,11 +7,22 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": []
+		"ignore": [
+			"node-modules",
+			".vscode",
+			".env",
+			".gitignore",
+			"docker-compose.yaml"
+		]
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"indentStyle": "space",
+		"bracketSpacing": true,
+		"indentWidth": 2,
+		"lineEnding": "lf",
+		"lineWidth": 80,
+		"formatWithErrors": true
 	},
 	"organizeImports": {
 		"enabled": true
@@ -24,7 +35,10 @@
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double"
+			"quoteStyle": "single",
+			"arrowParentheses": "asNeeded",
+			"semicolons": "asNeeded",
+			"trailingCommas": "all"
 		}
 	}
 }
